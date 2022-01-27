@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="utf-8" />
 		<meta
@@ -85,38 +85,79 @@
 	<body class="font-sans">
 		<div class="grid grid-cols-12">
 			<header
-				class="bg-sky-300 lg:col-start-1 lg:col-end-3 lg:row-span-3 py-20 mx-auto lg:min-h-screen flex lg:flex-col lg:items-center lg:justify-center fixed z-50 w-2/12"
+				class="bg-sky-300 col-span-12 lg:col-start-1 lg:col-end-3 lg:row-span-3 lg:py-20 lg:min-h-screen flex lg:items-center lg:justify-center lg:fixed z-50 lg:w-2/12"
 			>
-				<div class="px-5">
-					<div class="m-6 bg-sky-100 rounded-full p-1 w-4/6 mx-auto">
-						<img
-							class="rounded-full hover:cursor-pointer"
-							src="/dist/img/profile02.jpg"
-							alt="Fazal Jana Portfolio Picture"
-							srcset="/dist/img/profile02.jpg"
-						/>
-					</div>
-					<nav class="flex justify-center text-center mx-auto">
-						<ul>
-							<li class="lg:text-xl font-bold py-2 text-sky-50">
-								<a href="/index.html">ABOUT</a>
-							</li>
-							<li
-								class="lg:text-xl font-bold py-2 lg:mb-2 text-sky-50"
+				<nav
+					class="flex flex-col justify-between items-end lg:items-center"
+				>
+					<div
+						class="flex lg:flex-col justify-between border-b lg:border-b-0 px-5 py-2 lg:py-0 lg:px-10 relative"
+					>
+						<div
+							class="lg:mb-6 bg-sky-50 rounded-full p-1 w-3/12 md:w-1/12 lg:w-full lg:mx-auto z-10"
+						>
+							<img
+								class="rounded-full hover:cursor-pointer"
+								src="/dist/img/profile02.jpg"
+								alt="Fazal Jana Portfolio Picture"
+								srcset="/dist/img/profile02.jpg"
+							/>
+						</div>
+						<button class="lg:hidden mr-5" id="menuButton">
+							<svg
+								class="w-10 rounded-full stroke-sky-50"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
 							>
-								<a href="/work.html">WORK</a>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+								></path>
+							</svg>
+						</button>
+					</div>
+					<div
+						class="flex flex-col items-start justify-start lg:justify-center lg:items-center z-40 px-5 py-5 transition-all duration-500 ease-in-out hidden lg:block"
+						id="menuList"
+					>
+						<ul
+							class="flex flex-col lg:items-center justify-start lg:text-center bg-sky-300 z-10 lg:w-auto transition-all duration-500 ease-in-out w-12/12 space-y-4 text-right mr-5"
+							id="menuItems"
+						>
+							<li
+								class="lg:text-xl font-bold text-sky-50 mx-2 transition-all duration-500 ease-in-out"
+							>
+								<a href="#about">ABOUT</a>
+							</li>
+							<li class="lg:text-xl font-bold text-sky-50 mx-2">
+								<a href="#experience">EXPERIENCE</a>
+							</li>
+							<li class="lg:text-xl font-bold text-sky-50 mx-2">
+								<a href="#education">EDUCATION</a>
+							</li>
+							<li class="lg:text-xl font-bold text-sky-50 mx-2">
+								<a href="#skills">SKILLS</a>
+							</li>
+							<li class="lg:text-xl font-bold text-sky-50 mx-2">
+								<a href="#interests">INTERESTS</a>
 							</li>
 						</ul>
-					</nav>
-				</div>
+					</div>
+				</nav>
 			</header>
 			<main
-				class="lg:col-start-3 lg:col-end-13 lg:row-span-1 text-slate-600"
+				class="py-2 lg:py-20 col-span-12 lg:col-start-3 lg:col-end-13 lg:row-span-1 text-slate-600"
 			>
-				<section class="lg:py-20 border-b">
+				<section class="py-8 lg:py-20 border-b" id="about">
 					<div class="container px-10 mx-auto">
 						<p class="lg:text-xl font-light">Hi, I'm</p>
-						<h1 class="lg:text-8xl font-bold tracking-wide">
+						<h1
+							class="text-4xl lg:text-8xl font-extrabold lg:font-bold tracking-wide"
+						>
 							<span class="">FAZAL</span>
 							<span class="text-sky-300"> JANA</span>
 						</h1>
@@ -139,14 +180,17 @@
 					</div>
 				</section>
 
-				<section class="lg:py-20 lg:px-10 border-b">
+				<section
+					class="py-8 lg:py-20 lg:px-10 border-b"
+					id="experience"
+				>
 					<div class="container px-10 mx-auto">
 						<h2
 							class="font-bold text-xl lg:text-6xl tracking-wider"
 						>
 							EXPERIENCE
 						</h2>
-						<div class="lg:pt-10 pb-5">
+						<div class="pt-5 lg:pt-10 pb-5">
 							<div class="text-lg font-light italic">
 								<p>June 4, 2017 - Present</p>
 								<p>October 2014 - June 2016</p>
@@ -159,7 +203,7 @@
 									href="https://www.aegion.com/about/our-brands/corrpro"
 									target="_blank"
 									rel="noopener noreferrer"
-									class="text-xl font-light text-sky-300 hover:underline"
+									class="text-lg md:text-xl font-light text-sky-300 hover:underline"
 									>Corrpro Inc. | Calgary, Canada</a
 								>
 							</h3>
@@ -225,7 +269,7 @@
 							</ul>
 						</div>
 
-						<div class="lg:pt-10 pb-5">
+						<div class="pt-5 lg:pt-10 pb-5">
 							<div class="text-lg font-light italic">
 								<p>October 4, 2018 - Present</p>
 							</div>
@@ -237,7 +281,7 @@
 									href="https://www.revmedical.ca"
 									target="_blank"
 									rel="noopener noreferrer"
-									class="text-xl font-light text-sky-300 hover:underline"
+									class="text-lg md:text-xl font-light text-sky-300 hover:underline"
 									>Revolution Medical Clinic | Calgary,
 									Canada</a
 								>
@@ -247,7 +291,7 @@
 									href="https://revolutionremedysrx.ca/"
 									target="_blank"
 									rel="noopener noreferrer"
-									class="text-xl font-light text-sky-300 hover:underline"
+									class="text-lg md:text-xl font-light text-sky-300 hover:underline"
 									>Revolution Remedy'sRX | Calgary, Canada</a
 								>
 							</h3>
@@ -288,18 +332,18 @@
 					</div>
 				</section>
 
-				<section class="lg:py-20 lg:px-10 border-b">
-					<div class="container px-10 mx-auto">
+				<section class="py-8 lg:py-20 lg:px-10 border-b" id="education">
+					<div class="container px-10 mx-auto space-y-10">
 						<h2
 							class="font-bold text-xl lg:text-6xl tracking-wider"
 						>
 							EDUCATION
 						</h2>
-						<div class="lg:pt-10 pb-5">
+						<div class="space-y-1">
 							<div class="text-lg font-light italic">
 								<p>September 2016 - November 2018</p>
 							</div>
-							<h2 class="text-2xl lg:text-4xl font-semibold py-2">
+							<h2 class="text-2xl lg:text-4xl font-semibold">
 								BACHELOR OF APPLIED TECHNOLOGY GEOGRAPHIC
 								INFORMATION SYSTEMS
 							</h2>
@@ -308,17 +352,17 @@
 									href="https://www.sait.ca"
 									target="_blank"
 									rel="noopener noreferrer"
-									class="text-xl font-light text-sky-300 hover:underline"
+									class="text-lg md:text-xl font-light text-sky-300 hover:underline"
 									>Southern Alberta Institute of Technology
 									(SAIT)</a
 								>
 							</h3>
 						</div>
-						<div class="lg:pt-10 pb-5">
+						<div class="space-y-1">
 							<div class="text-lg font-light italic">
 								<p>September 2012 - August 2014</p>
 							</div>
-							<h2 class="text-2xl lg:text-4xl font-semibold py-2">
+							<h2 class="text-2xl lg:text-4xl font-semibold">
 								ENGINEERING DESIGN & DRAFTING TECHNOLOGY
 							</h2>
 							<h3>
@@ -326,17 +370,17 @@
 									href="https://www.sait.ca"
 									target="_blank"
 									rel="noopener noreferrer"
-									class="text-xl font-light text-sky-300 hover:underline"
+									class="text-lg md:text-xl font-light text-sky-300 hover:underline"
 									>Southern Alberta Institute of Technology
 									(SAIT)</a
 								>
 							</h3>
 						</div>
-						<div class="lg:pt-10 pb-5">
+						<div class="space-y-1">
 							<div class="text-lg font-light italic">
 								<p>September 2021 - Current</p>
 							</div>
-							<h2 class="text-2xl lg:text-4xl font-semibold py-2">
+							<h2 class="text-2xl lg:text-4xl font-semibold">
 								THE WEB DEVELOPER BOOTCAMP
 							</h2>
 							<h3>
@@ -344,165 +388,211 @@
 									href="https://www.udemy.com"
 									target="_blank"
 									rel="noopener noreferrer"
-									class="text-xl font-light text-sky-300 hover:underline"
+									class="text-lg md:text-xl font-light text-sky-300 hover:underline"
 									>Udemy
 								</a>
 							</h3>
 						</div>
 					</div>
 				</section>
-				<section class="lg:py-20 lg:px-10 border-b">
-					<div class="container px-10 mx-auto">
+				<section class="py-8 lg:py-20 lg:px-10 border-b" id="skills">
+					<div class="container px-10 mx-auto space-y-4">
 						<h2
 							class="font-bold text-xl lg:text-6xl tracking-wider"
 						>
 							SKILLS
 						</h2>
-						<div class="lg:pt-10 pb-5">
-							<div class="text-lg font-light flex items-center">
-								<h3 class="lg:text-xl py-2 w-2/12">
+						<div class="lg:pt-10 space-y-4">
+							<div class="flex items-center">
+								<h3
+									class="font-medium md:font-light text-sm md:text-lg lg:text-xl w-4/12 md:w-2/12"
+								>
 									ArcGIS Desktop
 								</h3>
 								<div
-									class="w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
+									class="w-8/12 md:w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
 								>
 									<p
 										class="bg-sky-300 font-medium text-sky-50 text-center w-9/12"
 									></p>
 								</div>
 							</div>
-							<div class="text-lg font-light flex items-center">
-								<h3 class="lg:text-xl py-2 w-2/12">
+							<div class="flex items-center">
+								<h3
+									class="font-medium md:font-light text-sm md:text-lg lg:text-xl w-4/12 md:w-2/12"
+								>
 									ArcGIS Enterprise
 								</h3>
 								<div
-									class="w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
+									class="w-8/12 md:w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
 								>
 									<p
 										class="bg-sky-300 font-medium text-sky-50 text-center w-8/12"
 									></p>
 								</div>
 							</div>
-							<div class="text-lg font-light flex items-center">
-								<h3 class="lg:text-xl py-2 w-2/12">FME</h3>
+							<div class="flex items-center">
+								<h3
+									class="font-medium md:font-light text-sm md:text-lg lg:text-xl w-4/12 md:w-2/12"
+								>
+									FME
+								</h3>
 								<div
-									class="w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
+									class="w-8/12 md:w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
 								>
 									<p
 										class="bg-sky-300 font-medium text-sky-50 text-center w-3/12"
 									></p>
 								</div>
 							</div>
-							<div class="text-lg font-light flex items-center">
-								<h3 class="lg:text-xl py-2 w-2/12">QGIS</h3>
+							<div class="flex items-center">
+								<h3
+									class="font-medium md:font-light text-sm md:text-lg lg:text-xl w-4/12 md:w-2/12"
+								>
+									QGIS
+								</h3>
 								<div
-									class="w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
+									class="w-8/12 md:w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
 								>
 									<p
 										class="bg-sky-300 font-medium text-sky-50 text-center w-11/12"
 									></p>
 								</div>
 							</div>
-							<div class="text-lg font-light flex items-center">
-								<h3 class="lg:text-xl py-2 w-2/12">
+							<div class="flex items-center">
+								<h3
+									class="font-medium md:font-light text-sm md:text-lg lg:text-xl w-4/12 md:w-2/12"
+								>
 									JavaScript
 								</h3>
 								<div
-									class="w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
+									class="w-8/12 md:w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
 								>
 									<p
 										class="bg-sky-300 font-medium text-sky-50 text-center w-8/12"
 									></p>
 								</div>
 							</div>
-							<div class="text-lg font-light flex items-center">
-								<h3 class="lg:text-xl py-2 w-2/12">HTML</h3>
+							<div class="flex items-center">
+								<h3
+									class="font-medium md:font-light text-sm md:text-lg lg:text-xl w-4/12 md:w-2/12"
+								>
+									HTML
+								</h3>
 								<div
-									class="w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
+									class="w-8/12 md:w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
 								>
 									<p
 										class="bg-sky-300 font-medium text-sky-50 text-center w-11/12"
 									></p>
 								</div>
 							</div>
-							<div class="text-lg font-light flex items-center">
-								<h3 class="lg:text-xl py-2 w-2/12">CSS</h3>
+							<div class="flex items-center">
+								<h3
+									class="font-medium md:font-light text-sm md:text-lg lg:text-xl w-4/12 md:w-2/12"
+								>
+									CSS
+								</h3>
 								<div
-									class="w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
+									class="w-8/12 md:w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
 								>
 									<p
 										class="bg-sky-300 font-medium text-sky-50 text-center w-11/12"
 									></p>
 								</div>
 							</div>
-							<div class="text-lg font-light flex items-center">
-								<h3 class="lg:text-xl py-2 w-2/12">React JS</h3>
+							<div class="flex items-center">
+								<h3
+									class="font-medium md:font-light text-sm md:text-lg lg:text-xl w-4/12 md:w-2/12"
+								>
+									React JS
+								</h3>
 								<div
-									class="w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
+									class="w-8/12 md:w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
 								>
 									<p
 										class="bg-sky-300 font-medium text-sky-50 text-center w-1/12"
 									></p>
 								</div>
 							</div>
-							<div class="text-lg font-light flex items-center">
-								<h3 class="lg:text-xl py-2 w-2/12">SASS</h3>
+							<div class="flex items-center">
+								<h3
+									class="font-medium md:font-light text-sm md:text-lg lg:text-xl w-4/12 md:w-2/12"
+								>
+									SASS
+								</h3>
 								<div
-									class="w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
+									class="w-8/12 md:w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
 								>
 									<p
 										class="bg-sky-300 font-medium text-sky-50 text-center w-9/12"
 									></p>
 								</div>
 							</div>
-							<div class="text-lg font-light flex items-center">
-								<h3 class="lg:text-xl py-2 w-2/12">SQL</h3>
+							<div class="flex items-center">
+								<h3
+									class="font-medium md:font-light text-sm md:text-lg lg:text-xl w-4/12 md:w-2/12"
+								>
+									SQL
+								</h3>
 								<div
-									class="w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
+									class="w-8/12 md:w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
 								>
 									<p
 										class="bg-sky-300 font-medium text-sky-50 text-center w-11/12"
 									></p>
 								</div>
 							</div>
-							<div class="text-lg font-light flex items-center">
-								<h3 class="lg:text-xl py-2 w-2/12">Python</h3>
+							<div class="flex items-center">
+								<h3
+									class="font-medium md:font-light text-sm md:text-lg lg:text-xl w-4/12 md:w-2/12"
+								>
+									Python
+								</h3>
 								<div
-									class="w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
+									class="w-8/12 md:w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
 								>
 									<p
 										class="bg-sky-300 font-medium text-sky-50 text-center w-6/12"
 									></p>
 								</div>
 							</div>
-							<div class="text-lg font-light flex items-center">
-								<h3 class="lg:text-xl py-2 w-2/12">Github</h3>
+							<div class="flex items-center">
+								<h3
+									class="font-medium md:font-light text-sm md:text-lg lg:text-xl w-4/12 md:w-2/12"
+								>
+									Github
+								</h3>
 								<div
-									class="w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
+									class="w-8/12 md:w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
 								>
 									<p
 										class="bg-sky-300 font-medium text-sky-50 text-center w-9/12"
 									></p>
 								</div>
 							</div>
-							<div class="text-lg font-light flex items-center">
-								<h3 class="lg:text-xl py-2 w-2/12">
+							<div class="flex items-center">
+								<h3
+									class="font-medium md:font-light text-sm md:text-lg lg:text-xl w-4/12 md:w-2/12"
+								>
 									Wordpress CMS
 								</h3>
 								<div
-									class="w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
+									class="w-8/12 md:w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
 								>
 									<p
 										class="bg-sky-300 font-medium text-sky-50 text-center w-11/12"
 									></p>
 								</div>
 							</div>
-							<div class="text-lg font-light flex items-center">
-								<h3 class="lg:text-xl py-2 w-2/12">
+							<div class="flex items-center">
+								<h3
+									class="font-medium md:font-light text-sm md:text-lg lg:text-xl w-4/12 md:w-2/12"
+								>
 									MS Office Suite
 								</h3>
 								<div
-									class="w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
+									class="w-8/12 md:w-8/12 lg:w-10/12 flex justify-start border border-sky-300 rounded hover:shadow cursor-pointer h-5"
 								>
 									<p
 										class="bg-sky-300 font-medium text-sky-50 text-center w-11/12"
@@ -514,15 +604,39 @@
 				</section>
 			</main>
 			<footer
-				class="container lg:col-start-3 lg:col-end-12 lg:row-span-1 text-slate-600 w-11/12 mx-auto lg:px-10"
+				class="pt-10 pb-20 lg:px-10 col-span-12 lg:col-start-3 lg:col-end-13 lg:row-span-1 text-slate-600"
 			>
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-					Atque velit, reiciendis commodi harum ratione nulla totam
-					facilis neque quo tempore ipsa magni eaque? Fuga eos
-					laudantium distinctio saepe ipsum odio!
-				</p>
+				<section class="px-10" id="interests">
+					<div class="container mx-auto space-y-10">
+						<h2
+							class="font-bold text-xl lg:text-6xl tracking-wider"
+						>
+							INTERESTS
+						</h2>
+						<div class="lg:text-lg font-light space-y-6">
+							<p>
+								Apart from being a drafter, gis analyst & part
+								time web developer I enjoy most of my time being
+								outdoors and spending time with my family and
+								friends. In the winter, I am an avid snowboarder
+								and novice hiker. During the warmer months here
+								in Calgary, I enjoy biking, rafting down the
+								bow, and fishing.
+							</p>
+							<p>
+								When forced indoors, I follow a number of sci-fi
+								and fantasy genre movies and television shows, I
+								am an aspiring chef and I spend a large amount
+								of my free time exploring the latest technology
+								advancements in the web development and GIS
+								world.
+							</p>
+						</div>
+					</div>
+				</section>
 			</footer>
 		</div>
+
+		<script src="/dist/js/main.js"></script>
 	</body>
 </html>
